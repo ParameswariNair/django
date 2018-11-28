@@ -1,0 +1,44 @@
+<form action="" method="POST"enctype="multipart/form-data">
+    {% csrf_token %}
+  <table border=2 >
+        <body background="../static/img1.jpg">  
+    <h1>Admin</h1>
+    <thead>
+        <tr>
+            <th>id</th>
+            <th>ProfilePhoto</th>
+            <th>Name</th>
+            <th>Age</th>
+            <th>Gender</th>
+            <th>Location</th>
+            <th>Email</th>
+        </tr>
+    </thead>
+
+     <tbody>
+         {% for d1 in d %}
+     <tr>
+    
+    <td>{{d1.0}}</td>
+    
+    <td>{{d1.1}}</td>
+    
+    <td>{{d1.2}}</td>
+    
+    <td>{{d1.3}}</td>
+    
+    <td>{{d1.4}}</td>
+    
+    <td>{{d1.5}}</td>
+    
+    <td>{{d1.6}}</td>
+    <td>
+        <a href="delete?username={{d1.7}}">DELETE</a>
+    </td>
+</tr>
+{% endfor %}
+</tbody>
+
+ </body>  
+</table>
+</form>

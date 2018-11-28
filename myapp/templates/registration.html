@@ -1,0 +1,60 @@
+<form action="" method="POST"enctype="multipart/form-data">
+    {% csrf_token %}
+  <table>
+    <h1>Register</h1>
+
+    <body background="../static/img1.jpg">   
+    
+
+    <tr>
+    <td>Name</td>
+    <td><input type="text" name="name" required></td>
+    </tr>
+
+    <tr>
+    <td>Age</td>
+    <td><input type="text"  name="age" required></td>
+    </tr>
+
+    <tr>
+    <td>Gender</td>
+    <td><input type="radio" name="gender" id="g1" value="male"> Male
+    <input type="radio" name="gender"id="g2" value="female"> Female</td>
+    </tr>
+
+    <tr>
+    <td><b>Location</b></td>
+    <td><input type="text"  name="location" required></td>
+    </tr>
+    
+   
+    <tr>
+    <td><b>Email</b></td>
+    <td><input type="text"  name="email" required></td>
+    </tr>
+
+    <tr>
+    <td><b>Username</b></td>
+    <td><input type="text"  name="username" required></td>
+    </tr>
+
+    <tr>
+    <td>Password</td>
+    <td><input type="text"  name="password" required></td>
+    </tr>
+
+    <tr>
+    <td><b>profile photo</b></td>
+    <td><input type="file"  name="photo" required></td> 
+    </tr>
+
+    <tr>
+   <td> <button type="submit">Login</button></td>
+    </tr>
+   </body>
+  </table>
+</form>
+    
+   
+    
+ 
