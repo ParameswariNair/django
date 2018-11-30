@@ -72,8 +72,8 @@ def login(request):
 
         username=request.POST.get("username")
         password=request.POST.get("password")
-        d="select * from login_tab where username='"+username+"' and password='"+password+"'"
-        c.execute("select * from login_tab where username='"+username+"' and password='"+password+"'")
+        d="select role from login_tab where username='"+username+"' and password='"+password+"'"
+        c.execute("select role from login_tab where username='"+username+"' and password='"+password+"'")
         data=c.fetchone()
         request.session["sname"] =username
         if(data[1]=="user"):
